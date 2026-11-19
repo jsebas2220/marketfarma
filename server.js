@@ -63,8 +63,12 @@ app.post('/api/contacto', async (req, res) => {
     mensaje: clean(mensaje, 2000),
   };
 
-  if (data.nombre.length < 2 || data.mensaje.length < 10 || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)) {
-    return res.status(400).json({ ok: false, error: 'Revisa nombre, correo y mensaje.' });
+  const validationErrors = [];
+  if (data.nombre.length < 2) validationErrors.push('El nombre debe tener al menos 2 caracteres.');
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)) validationErrors.push('Ingresa un correo válido.');
+  if (data.mensaje.length < 10) validationErrors.push('El mensaje debe tener al menos 10 caracteres.');
+  if (validationErrors.length) {
+    return res.status(400).json({ ok: false, error: validationErrors.join(' ') });
   }
 
   if (!RESEND_API_KEY || !RESEND_FROM) {
