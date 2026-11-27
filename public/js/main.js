@@ -76,7 +76,7 @@ const showStoreWelcome = () => {
       <section class="store-welcome__dialog" role="dialog" aria-modal="true" aria-labelledby="store-welcome-title" aria-describedby="store-welcome-description">
         <button class="store-welcome__close" type="button" aria-label="Cerrar ventana">×</button>
         <img class="store-welcome__logo" src="/img/logo-completo.png" alt="MarketFarma" width="1815" height="312">
-        <p class="store-welcome__eyebrow">Tu salud, más cerca</p>
+        <p class="store-welcome__eyebrow">Salud más cerca de ti</p>
         <h2 id="store-welcome-title">Todos nuestros productos en un solo lugar</h2>
         <p id="store-welcome-description">Encuentra todos los productos que buscas en nuestra tienda virtual.</p>
         <a class="store-welcome__shop" href="${STORE_URL}" target="_blank" rel="noopener noreferrer">
@@ -283,10 +283,13 @@ if (businessChat) {
     const normalizedMessage = message.toLocaleLowerCase('es').normalize('NFD').replace(/[\u0300-\u036f]/g, '');
     let reply = 'Puedo orientarte sobre productos, insumos médicos y contacto. ¿Qué necesitas consultar?';
     let replyLink = '';
-    if (/insumo|guante|gasa|jeringa|material/.test(normalizedMessage)) {
+    if (/aliad|alianza|laboratorio|proveedor|cotiza|institucion|clinica|hospital|ips/.test(normalizedMessage)) {
+      reply = 'Para alianzas con laboratorios y proveedores, o cotizaciones institucionales, revisa esta página:';
+      replyLink = '/aliados';
+    } else if (/insumo|guante|gasa|jeringa|material/.test(normalizedMessage)) {
       reply = 'Puedes consultar nuestras categorías de insumos médicos aquí:';
       replyLink = '/insumos-medicos';
-    } else if (/producto|medicamento|vitamina|suplemento|catalogo/.test(normalizedMessage)) {
+    } else if (/producto|medicamento|vitamina|suplemento|nutric|dermo|piel|cuidado|catalogo/.test(normalizedMessage)) {
       reply = 'Revisa nuestras líneas de productos y encuentra la categoría que buscas:';
       replyLink = '/productos';
     } else if (/contacto|asesor|pedido|disponibilidad|horario|telefono/.test(normalizedMessage)) {
@@ -351,7 +354,7 @@ if (siteHeader) {
   const searchInput = siteHeader.querySelector('#site-search-input');
   const searchResults = siteHeader.querySelector('.site-search__results');
   const searchClose = siteHeader.querySelector('.site-search__close');
-  const searchPages = ['/', '/nosotros', '/productos', '/calidad', '/contacto', '/insumos-medicos'];
+  const searchPages = ['/', '/nosotros', '/productos', '/calidad', '/contacto', '/insumos-medicos', '/aliados'];
 
   const closeSearch = () => {
     searchForm.hidden = true;
@@ -444,6 +447,14 @@ if (siteHeader) {
   if (!form) return;
   const msg = document.getElementById('form-msg');
   const submit = form.querySelector('button[type="submit"]');
+
+  // Preselecciona el asunto si viene en la URL (ej. /contacto?asunto=Cotización institucional)
+  const asuntoParam = new URLSearchParams(window.location.search).get('asunto');
+  const asuntoSelect = form.querySelector('#asunto');
+  if (asuntoParam && asuntoSelect) {
+    const option = [...asuntoSelect.options].find((o) => o.value === asuntoParam);
+    if (option) asuntoSelect.value = option.value;
+  }
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault();

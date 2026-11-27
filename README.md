@@ -17,9 +17,9 @@ Para producción, agrega y verifica en Resend el dominio que usarás como remite
 ## Pendiente por completar (busca el texto resaltado en amarillo)
 - Teléfono, dirección y horario (contacto.html y pie de página)
 - Historia de la empresa (nosotros.html)
-- Misión y visión oficiales (nosotros.html)
 - Registros sanitarios y certificaciones reales (calidad.html)
-- Productos reales de cada línea (productos.html)
+- Productos reales de cada línea (productos.html e insumos-medicos.html)
+- URL de la tienda virtual (constante STORE_URL en public/js/main.js y enlaces "Tienda" de las páginas)
 
 ## Estructura
     server.js            servidor Express + endpoint /api/contacto

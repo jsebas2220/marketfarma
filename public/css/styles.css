@@ -102,7 +102,7 @@ p { margin: 0 0 1em; }
 .menu-btn[aria-expanded='true'] span:nth-child(2) { opacity: 0; }
 .menu-btn[aria-expanded='true'] span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
 
-@media (max-width: 900px) {
+@media (max-width: 1180px) {
   .menu-btn { display: block; }
   .nav-links {
     position: absolute; left: 0; right: 0; top: 78px; background: #fff; flex-direction: column; align-items: stretch;
@@ -409,3 +409,17 @@ p { margin: 0 0 1em; }
   .business-chat__notice, .business-chat__launcher--new { animation: none; }
   .store-welcome__dialog { animation: none; }
 }
+
+/* ---- pilares (inicio) ---- */
+.pillars-band { background: #fff; border-bottom: 1px solid var(--line); }
+.pillars { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; padding: 34px 0; }
+.pillar { display: flex; align-items: flex-start; gap: 14px; }
+.pillar .icon { flex: none; width: 48px; height: 48px; margin: 0; border-radius: 14px; }
+.pillar .icon svg { width: 24px; height: 24px; }
+.pillar strong { display: block; font-family: var(--font-head); font-weight: 600; color: var(--blue); text-transform: uppercase; letter-spacing: .04em; font-size: .92rem; }
+.pillar span { display: block; color: var(--muted); font-size: .92rem; margin-top: 2px; }
+@media (max-width: 960px) { .pillars { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 520px) { .pillars { grid-template-columns: 1fr; } }
+
+/* ---- etiqueta "En desarrollo" (ecosistema) ---- */
+.soon { display: inline-block; margin: -6px 0 10px; padding: 3px 10px; border-radius: 999px; background: #fff3d6; color: #6b4e00; font: 600 .75rem var(--font-head); letter-spacing: .06em; text-transform: uppercase; }
