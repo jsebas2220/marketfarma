@@ -317,12 +317,18 @@ if (businessChat) {
   });
 
   // Muestra el saludo una sola vez, a los 5 s; si el usuario lo cierra no vuelve a aparecer
-  window.setTimeout(() => {
-    if (!chatWasOpened && chatPanel.hidden) {
+  // Si el aviso de cookies está visible, espera a que se responda para no encimarse con él
+  const scheduleGreeting = () => window.setTimeout(() => {
+    if (!chatWasOpened && chatPanel.hidden && !document.querySelector('.cookie-consent, .store-welcome')) {
       greetingNotice.hidden = false;
       chatLauncher.classList.add('business-chat__launcher--new');
     }
   }, 5000);
+  if (document.querySelector('.cookie-consent')) {
+    document.addEventListener(cookieConsentEvent, scheduleGreeting, { once: true });
+  } else {
+    scheduleGreeting();
+  }
 }
 
 // Búsqueda del sitio
