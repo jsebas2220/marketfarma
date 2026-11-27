@@ -2,19 +2,18 @@
 
 const express = require('express');
 const path = require('path');
-const fs = require('fs');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 const PUBLIC_DIR = path.join(__dirname, 'public');
-const DATA_DIR = path.join(__dirname, 'data');
-const MESSAGES_FILE = path.join(DATA_DIR, 'mensajes.jsonl');
 const CONTACT_EMAIL = 'mf.medicamentoseinsumos@gmail.com';
 const RESEND_API_URL = 'https://api.resend.com/emails';
 const RESEND_API_KEY = process.env.RESEND_API_KEY;
 const RESEND_FROM = process.env.RESEND_FROM;
 
 app.disable('x-powered-by');
+// Render (y otros hosts) ponen un proxy delante: así req.ip es la IP real del visitante
+app.set('trust proxy', 1);
 
 // Cabeceras de seguridad básicas
 app.use((req, res, next) => {
@@ -42,13 +41,19 @@ app.use(
 );
 
 // ---- Formulario de contacto ----
+const RATE_LIMIT_MS = 30000;
 const lastByIp = new Map(); // límite simple: 1 envío cada 30 s por IP
+// Limpia las IP antiguas para que el mapa no crezca sin límite
+setInterval(() => {
+  const limit = Date.now() - RATE_LIMIT_MS;
+  for (const [ip, time] of lastByIp) if (time < limit) lastByIp.delete(ip);
+}, 10 * 60 * 1000).unref();
 const clean = (v, max) => String(v || '').replace(/[\u0000-\u001f\u007f]/g, ' ').trim().slice(0, max);
 
 app.post('/api/contacto', async (req, res) => {
   const ip = req.ip || 'x';
   const now = Date.now();
-  if (now - (lastByIp.get(ip) || 0) < 30000) {
+  if (now - (lastByIp.get(ip) || 0) < RATE_LIMIT_MS) {
     return res.status(429).json({ ok: false, error: 'Espera unos segundos antes de enviar otro mensaje.' });
   }
 
@@ -77,9 +82,6 @@ app.post('/api/contacto', async (req, res) => {
   }
 
   try {
-    fs.mkdirSync(DATA_DIR, { recursive: true });
-    fs.appendFileSync(MESSAGES_FILE, JSON.stringify({ fecha: new Date().toISOString(), ...data }) + '\n');
-    lastByIp.set(ip, now);
     const emailResponse = await fetch(RESEND_API_URL, {
       method: 'POST',
       headers: {
@@ -107,9 +109,10 @@ app.post('/api/contacto', async (req, res) => {
       console.error(`Resend rechazó el mensaje (${emailResponse.status}): ${providerError}`);
       return res.status(502).json({ ok: false, error: 'No pudimos enviar tu mensaje. Intenta más tarde.' });
     }
+    lastByIp.set(ip, now); // solo cuenta para el límite si el envío salió bien
     return res.json({ ok: true });
   } catch (err) {
-    console.error('No se pudo guardar o enviar el mensaje:', err.message);
+    console.error('No se pudo enviar el mensaje:', err.message);
     return res.status(502).json({ ok: false, error: 'No pudimos enviar tu mensaje. Intenta más tarde.' });
   }
 });

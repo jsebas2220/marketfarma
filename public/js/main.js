@@ -45,6 +45,10 @@ document.querySelectorAll('[data-year]').forEach((el) => (el.textContent = new D
 const cookieConsentName = 'marketfarma_cookie_consent';
 const cookieConsentEvent = 'marketfarma-cookie-consent';
 const excludedWelcomePaths = ['/404', '/404.html'];
+// URL de la tienda virtual. Mientras siga el valor de ejemplo, el aviso de la tienda no se muestra.
+const STORE_URL = 'https://TU-TIENDA-VIRTUAL.com';
+const storeConfigured = !STORE_URL.includes('TU-TIENDA-VIRTUAL');
+const storeWelcomeKey = 'marketfarma_store_welcome_seen';
 
 const getCookieConsent = () => {
   const consentCookie = document.cookie.split('; ').find((cookie) => cookie.startsWith(`${cookieConsentName}=`));
@@ -57,7 +61,14 @@ const saveCookieConsent = (choice) => {
 };
 
 const showStoreWelcome = () => {
-  if (excludedWelcomePaths.includes(window.location.pathname)) return;
+  if (!storeConfigured || excludedWelcomePaths.includes(window.location.pathname)) return;
+  // Solo una vez por visita (sesión del navegador), no en cada página
+  try {
+    if (sessionStorage.getItem(storeWelcomeKey)) return;
+    sessionStorage.setItem(storeWelcomeKey, '1');
+  } catch {
+    // Sin sessionStorage (modo privado estricto): se muestra igual
+  }
 
   document.body.insertAdjacentHTML('beforeend', `
     <div class="store-welcome">
@@ -68,7 +79,7 @@ const showStoreWelcome = () => {
         <p class="store-welcome__eyebrow">Tu salud, más cerca</p>
         <h2 id="store-welcome-title">Todos nuestros productos en un solo lugar</h2>
         <p id="store-welcome-description">Encuentra todos los productos que buscas en nuestra tienda virtual.</p>
-        <a class="store-welcome__shop" href="https://TU-TIENDA-VIRTUAL.com" target="_blank" rel="noopener noreferrer">
+        <a class="store-welcome__shop" href="${STORE_URL}" target="_blank" rel="noopener noreferrer">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10h18l-2-6H5z"/><path d="M4 10v10h16V10M9 20v-6h6v6"/><path d="M3 10a3 3 0 0 0 6 0 3 3 0 0 0 6 0 3 3 0 0 0 6 0"/></svg>
           <span>Visitar tienda virtual</span>
         </a>
@@ -302,8 +313,9 @@ if (businessChat) {
     if (event.key === 'Escape') closeBusinessChat();
   });
 
-  window.setInterval(() => {
-    if (!chatWasOpened && chatPanel.hidden && greetingNotice.hidden) {
+  // Muestra el saludo una sola vez, a los 5 s; si el usuario lo cierra no vuelve a aparecer
+  window.setTimeout(() => {
+    if (!chatWasOpened && chatPanel.hidden) {
       greetingNotice.hidden = false;
       chatLauncher.classList.add('business-chat__launcher--new');
     }
