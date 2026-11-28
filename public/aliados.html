@@ -14,7 +14,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/css/styles.css?v=22">
+<link rel="stylesheet" href="/css/styles.css?v=30">
 </head>
 <body>
 <a class="skip" href="#contenido">Saltar al contenido</a>
@@ -22,7 +22,7 @@
   <div class="wrap nav">
     <a class="brand" href="/" aria-label="MarketFarma, inicio"><img src="/img/logo-completo.png" alt="MarketFarma - Medicamentos e Insumos" width="1815" height="312"></a>
     <button class="menu-btn" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
-    <ul class="nav-links" id="menu"><li><a href="/">Inicio</a></li><li><a href="/nosotros">Nosotros</a></li><li><a href="/productos">Productos</a></li><li><a href="/insumos-medicos">Insumos médicos</a></li><li><a href="/aliados" aria-current="page">Aliados</a></li><li><a href="/calidad">Calidad</a></li><li class="cta"><a href="/contacto">Contáctanos</a></li><li><a href="https://TU-TIENDA-VIRTUAL.com" target="_blank" rel="noopener noreferrer">Tienda</a></li></ul>
+    <ul class="nav-links" id="menu"><li><a href="/">Inicio</a></li><li><a href="/nosotros">Nosotros</a></li><li><a href="/productos">Productos</a></li><li><a href="/aliados" aria-current="page">Aliados</a></li><li><a href="/calidad">Calidad</a></li><li class="cta"><a href="/contacto">Contáctanos</a></li><li><a href="https://TU-TIENDA-VIRTUAL.com" target="_blank" rel="noopener noreferrer">Tienda</a></li></ul>
   </div>
 </header>
 <main id="contenido">
@@ -58,6 +58,15 @@
           <li>Entregas coordinadas según sus necesidades</li>
         </ul>
         <p style="margin:24px 0 0"><a class="btn btn-primary" href="/contacto?asunto=Cotizaci%C3%B3n%20institucional">Solicitar cotización</a></p>
+      </div>
+    </div>
+    <div class="brands reveal" id="aliados-logos" role="region" aria-labelledby="aliados-logos-title">
+      <div class="center">
+        <span class="eyebrow">Confían en nosotros</span>
+        <h2 id="aliados-logos-title">Nuestros aliados</h2>
+      </div>
+      <div class="brands__viewport">
+        <ul class="brands__track" data-logos="aliados"></ul>
       </div>
     </div>
   </div>
@@ -107,7 +116,7 @@
       </div>
       <div>
         <h4>Contacto</h4>
-        <ul><li><span class="pending">[Correo de la empresa]</span></li><li><span class="pending">[Teléfono]</span></li><li><span class="pending">[Ciudad, país]</span></li></ul>
+        <ul class="footer-contact"><li><a class="contact-chip" href="mailto:mf.medicamentoseinsumos@gmail.com"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><span>mf.medicamentoseinsumos<wbr>@gmail.com</span></a></li><li><a class="contact-chip" href="tel:+573138648530"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg><span>+57 313 864 8530</span></a></li><li><span class="contact-chip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Medellín, Colombia</span></span></li></ul>
       </div>
     </div>
     <div class="legal">
@@ -116,6 +125,7 @@
     </div>
   </div>
 </footer>
-<script src="/js/main.js?v=18" defer></script>
+<script src="/js/main.js?v=19" defer></script>
+<script src="/js/logos.js?v=1" defer></script>
 </body>
 </html>

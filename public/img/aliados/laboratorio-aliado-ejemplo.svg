@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 120" width="320" height="120">
+<g transform="translate(20 20)"><circle cx="40" cy="20" r="12" fill="#7c3aed"/><circle cx="16" cy="58" r="12" fill="#a78bfa"/><circle cx="64" cy="58" r="12" fill="#a78bfa"/><path d="M40 20L16 58h48z" fill="none" stroke="#7c3aed" stroke-width="6" stroke-linejoin="round"/></g>
+<text x="118" y="64" font-family="'Segoe UI', Arial, Helvetica, sans-serif" font-weight="700" font-size="34" fill="#6d28d9">LabAliado</text>
+<text x="120" y="90" font-family="'Segoe UI', Arial, Helvetica, sans-serif" font-weight="600" font-size="15" letter-spacing="3" fill="#6d28d9" opacity=".7">EJEMPLO</text>
+</svg>

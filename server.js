@@ -29,16 +29,22 @@ app.use((req, res, next) => {
 
 app.use(express.json({ limit: '10kb' }));
 
+// En modo desarrollo (npm run dev) no se guarda caché, para ver los cambios de CSS/JS al recargar
+const IS_DEV = process.argv.includes('--dev');
+
 // Archivos estáticos (con caché para recursos y sin extensión .html en las URLs)
 app.use(
   express.static(PUBLIC_DIR, {
     extensions: ['html'],
-    maxAge: '7d',
+    maxAge: IS_DEV ? 0 : '7d',
     setHeaders: (res, filePath) => {
       if (filePath.endsWith('.html')) res.setHeader('Cache-Control', 'no-cache');
     },
   })
 );
+
+// La antigua página de insumos médicos ahora es una sección de Productos
+app.get(['/insumos-medicos', '/insumos-medicos.html'], (req, res) => res.redirect(301, '/productos#insumos'));
 
 // ---- Formulario de contacto ----
 const RATE_LIMIT_MS = 30000;

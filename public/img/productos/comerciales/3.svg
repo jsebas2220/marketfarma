@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e7f3fb"/><stop offset="1" stop-color="#ffffff"/></linearGradient>
+  <filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#0b1f4a" flood-opacity=".16"/></filter>
+</defs>
+<rect width="1200" height="800" fill="url(#bg)"/>
+<path d="M1010 0h110L820 800H710z" fill="#104fb6" opacity=".07"/>
+<path d="M1140 0h60v120L950 800h-70z" fill="#1c94d1" opacity=".10"/>
+<path d="M-40 800 160 400h70L30 800z" fill="#104fb6" opacity=".05"/>
+<circle cx="600" cy="420" r="290" fill="#fff" opacity=".75"/>
+<ellipse cx="600" cy="628" rx="320" ry="22" fill="#0b1f4a" opacity=".07"/>
+<g filter="url(#sh)">
+
+<path d="M545 200h110v26h-10v124l120 210a26 26 0 0 1-22 40H457a26 26 0 0 1-22-40l120-210V226h-10z" fill="#fff" stroke="#104fb6" stroke-width="10" stroke-linejoin="round"/>
+<path d="M496 460h208l58 100a16 16 0 0 1-14 24H452a16 16 0 0 1-14-24z" fill="#1c94d1" opacity=".85"/>
+<circle cx="560" cy="520" r="16" fill="#fff" opacity=".7"/><circle cx="625" cy="498" r="10" fill="#fff" opacity=".7"/><circle cx="600" cy="420" r="9" fill="#1c94d1" opacity=".6"/><circle cx="582" cy="380" r="6" fill="#1c94d1" opacity=".5"/>
+<rect x="790" y="420" width="170" height="170" rx="16" fill="#104fb6"/>
+<rect x="790" y="420" width="170" height="40" rx="16" fill="#0a3580"/>
+<path d="M863.3333333333334 490.0h23.333333333333332v23.333333333333332h23.333333333333332v23.333333333333332h-23.333333333333332v23.333333333333332h-23.333333333333332v-23.333333333333332h-23.333333333333332v-23.333333333333332h23.333333333333332z" fill="#fff"/>
+<rect x="250" y="450" width="150" height="140" rx="16" fill="#1c94d1"/>
+<rect x="250" y="500" width="150" height="36" fill="#fff" opacity=".85"/>
+<rect x="275" y="512" width="100" height="12" rx="6" fill="#104fb6" opacity=".6"/>
+
+</g>
+<rect x="40" y="36" width="210" height="44" rx="22" fill="#fff" opacity=".9"/>
+<text x="145" y="65" text-anchor="middle" font-family="'Segoe UI', Arial, Helvetica, sans-serif" font-weight="700" font-size="19" fill="#104fb6" letter-spacing="1">IMAGEN ILUSTRATIVA</text>
+</svg>

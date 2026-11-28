@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 120" width="320" height="120">
+<g transform="translate(20 20)"><rect x="4" y="4" width="72" height="72" rx="14" fill="#16a34a"/><path d="M33 16h14v17h17v14H47v17H33V47H16V33h17z" fill="#fff"/></g>
+<text x="118" y="64" font-family="'Segoe UI', Arial, Helvetica, sans-serif" font-weight="700" font-size="34" fill="#15803d">Droguería</text>
+<text x="120" y="90" font-family="'Segoe UI', Arial, Helvetica, sans-serif" font-weight="600" font-size="15" letter-spacing="3" fill="#15803d" opacity=".7">EJEMPLO</text>
+</svg>

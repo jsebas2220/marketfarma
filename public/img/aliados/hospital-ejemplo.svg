@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 120" width="320" height="120">
+<g transform="translate(20 20)"><path d="M8 76V20l32-14 32 14v56z" fill="#dc2626"/><path d="M28 30v30M52 30v30M28 45h24" stroke="#fff" stroke-width="8" stroke-linecap="round"/></g>
+<text x="118" y="64" font-family="Georgia, 'Times New Roman', serif" font-weight="400" font-size="38" fill="#b91c1c">Hospital</text>
+<text x="120" y="90" font-family="'Segoe UI', Arial, Helvetica, sans-serif" font-weight="600" font-size="15" letter-spacing="3" fill="#b91c1c" opacity=".7">EJEMPLO</text>
+</svg>

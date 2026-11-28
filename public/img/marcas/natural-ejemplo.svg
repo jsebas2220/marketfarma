@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 120" width="320" height="120">
+<g transform="translate(20 20)"><path d="M40 76V36" stroke="#65a30d" stroke-width="6" stroke-linecap="round"/><path d="M40 40C40 18 56 6 74 6c0 22-14 34-34 34zM40 50C40 32 26 22 8 22c0 18 12 28 32 28z" fill="#84cc16"/></g>
+<text x="118" y="64" font-family="Georgia, 'Times New Roman', serif" font-weight="400" font-size="40" fill="#4d7c0f">Natural</text>
+<text x="120" y="90" font-family="'Segoe UI', Arial, Helvetica, sans-serif" font-weight="600" font-size="15" letter-spacing="3" fill="#4d7c0f" opacity=".7">EJEMPLO</text>
+</svg>

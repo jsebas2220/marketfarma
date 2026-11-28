@@ -288,7 +288,7 @@ if (businessChat) {
       replyLink = '/aliados';
     } else if (/insumo|guante|gasa|jeringa|material/.test(normalizedMessage)) {
       reply = 'Puedes consultar nuestras categorías de insumos médicos aquí:';
-      replyLink = '/insumos-medicos';
+      replyLink = '/productos#insumos';
     } else if (/producto|medicamento|vitamina|suplemento|nutric|dermo|piel|cuidado|catalogo/.test(normalizedMessage)) {
       reply = 'Revisa nuestras líneas de productos y encuentra la categoría que buscas:';
       replyLink = '/productos';
@@ -360,7 +360,7 @@ if (siteHeader) {
   const searchInput = siteHeader.querySelector('#site-search-input');
   const searchResults = siteHeader.querySelector('.site-search__results');
   const searchClose = siteHeader.querySelector('.site-search__close');
-  const searchPages = ['/', '/nosotros', '/productos', '/calidad', '/contacto', '/insumos-medicos', '/aliados'];
+  const searchPages = ['/', '/nosotros', '/productos', '/calidad', '/contacto', '/aliados'];
 
   const closeSearch = () => {
     searchForm.hidden = true;

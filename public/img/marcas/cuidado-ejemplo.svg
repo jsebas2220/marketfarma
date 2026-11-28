@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 120" width="320" height="120">
+<g transform="translate(20 20)"><circle cx="28" cy="24" r="12" fill="#8b5cf6"/><circle cx="54" cy="30" r="9" fill="#a78bfa"/><path d="M6 74c0-20 10-32 22-32s22 12 22 32z" fill="#8b5cf6"/><path d="M40 74c0-16 6-26 14-26s16 10 16 26z" fill="#a78bfa"/></g>
+<text x="118" y="64" font-family="'Segoe UI', Arial, Helvetica, sans-serif" font-weight="700" font-size="36" fill="#6d28d9">Cuidado</text>
+<text x="120" y="90" font-family="'Segoe UI', Arial, Helvetica, sans-serif" font-weight="600" font-size="15" letter-spacing="3" fill="#6d28d9" opacity=".7">EJEMPLO</text>
+</svg>

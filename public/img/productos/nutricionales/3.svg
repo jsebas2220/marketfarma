@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e7f3fb"/><stop offset="1" stop-color="#ffffff"/></linearGradient>
+  <filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#0b1f4a" flood-opacity=".16"/></filter>
+</defs>
+<rect width="1200" height="800" fill="url(#bg)"/>
+<path d="M1010 0h110L820 800H710z" fill="#104fb6" opacity=".07"/>
+<path d="M1140 0h60v120L950 800h-70z" fill="#2bb673" opacity=".10"/>
+<path d="M-40 800 160 400h70L30 800z" fill="#104fb6" opacity=".05"/>
+<circle cx="600" cy="420" r="290" fill="#fff" opacity=".75"/>
+<ellipse cx="600" cy="628" rx="320" ry="22" fill="#0b1f4a" opacity=".07"/>
+<g filter="url(#sh)">
+
+<rect x="520" y="330" width="170" height="270" rx="34" fill="#2bb673"/>
+<rect x="560" y="290" width="90" height="50" rx="8" fill="#1f8f59"/>
+<path d="M575 290v-60a30 30 0 0 1 60 0v60z" fill="#0b1f4a"/>
+<rect x="520" y="410" width="170" height="120" fill="#fff"/>
+<g transform="translate(570 500) rotate(-60)"><path d="M0 0C10.2 -30.6 40.8 -37.400000000000006 54.400000000000006 -37.400000000000006C51.0 -13.600000000000001 30.6 10.2 0 0z" fill="#2bb673"/><path d="M0 0C17.0 -13.600000000000001 34 -27.200000000000003 47.599999999999994 -34" stroke="#fff" stroke-opacity=".5" stroke-width="4" fill="none" stroke-linecap="round"/></g>
+<rect x="600" y="455" width="70" height="10" rx="5" fill="#2bb673" opacity=".7"/><rect x="600" y="478" width="50" height="10" rx="5" fill="#2bb673" opacity=".5"/>
+<g transform="translate(420 590) rotate(-70)"><path d="M0 0C21.0 -63.0 84.0 -77.0 112.0 -77.0C105.0 -28.0 63.0 21.0 0 0z" fill="#2bb673"/><path d="M0 0C35.0 -28.0 70 -56.0 98.0 -70" stroke="#fff" stroke-opacity=".5" stroke-width="4" fill="none" stroke-linecap="round"/></g><g transform="translate(430 590) rotate(-120)"><path d="M0 0C18.0 -54.0 72.0 -66.0 96.0 -66.0C90.0 -24.0 54.0 18.0 0 0z" fill="#7fd3a5"/><path d="M0 0C30.0 -24.0 60 -48.0 84.0 -60" stroke="#fff" stroke-opacity=".5" stroke-width="4" fill="none" stroke-linecap="round"/></g><g transform="translate(780 600) rotate(-40)"><path d="M0 0C19.8 -59.4 79.2 -72.60000000000001 105.60000000000001 -72.60000000000001C99.0 -26.400000000000002 59.4 19.8 0 0z" fill="#7fd3a5"/><path d="M0 0C33.0 -26.400000000000002 66 -52.800000000000004 92.39999999999999 -66" stroke="#fff" stroke-opacity=".5" stroke-width="4" fill="none" stroke-linecap="round"/></g><g transform="translate(790 600) rotate(-100)"><path d="M0 0C16.8 -50.4 67.2 -61.60000000000001 89.60000000000001 -61.60000000000001C84.0 -22.400000000000002 50.4 16.8 0 0z" fill="#2bb673"/><path d="M0 0C28.0 -22.400000000000002 56 -44.800000000000004 78.39999999999999 -56" stroke="#fff" stroke-opacity=".5" stroke-width="4" fill="none" stroke-linecap="round"/></g>
+<path d="M760 302.0C764.0 312.0 780 326.0 780 337.0A20 20 0 0 1 740 337.0C740 326.0 756.0 312.0 760 302.0z" fill="#2bb673"/><path d="M800 380.4C802.8 387.4 814 397.2 814 404.9A14 14 0 0 1 786 404.9C786 397.2 797.2 387.4 800 380.4z" fill="#7fd3a5"/>
+
+</g>
+<rect x="40" y="36" width="210" height="44" rx="22" fill="#fff" opacity=".9"/>
+<text x="145" y="65" text-anchor="middle" font-family="'Segoe UI', Arial, Helvetica, sans-serif" font-weight="700" font-size="19" fill="#104fb6" letter-spacing="1">IMAGEN ILUSTRATIVA</text>
+</svg>
