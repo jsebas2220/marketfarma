@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" role="img" aria-labelledby="t d">
+  <title id="t">Omeprazol 20 mg – MarketFarma</title>
+  <desc id="d">Empaque ilustrativo de Omeprazol 20 mg, cápsulas, caja x 30 cápsulas, con marca de agua MarketFarma.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#F3E5F5"/>
+    </linearGradient>
+    <linearGradient id="band" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6A1B9A"/>
+      <stop offset="1" stop-color="#AB47BC"/>
+    </linearGradient>
+    <linearGradient id="side" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6A1B9A"/>
+      <stop offset="1" stop-color="#6A1B9A" stop-opacity="0.75"/>
+    </linearGradient>
+    <radialGradient id="shine" cx="0.35" cy="0.3" r="0.8">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.85"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- Fondo -->
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <path d="M1010 0h110L820 800H710z" fill="#6A1B9A" opacity=".06"/>
+  <path d="M1140 0h60v120L950 800h-70z" fill="#AB47BC" opacity=".08"/>
+  <path d="M-40 800 160 400h70L30 800z" fill="#6A1B9A" opacity=".05"/>
+  <circle cx="600" cy="400" r="330" fill="#ffffff" opacity=".7"/>
+  <ellipse cx="590" cy="684" rx="260" ry="26" fill="#000" opacity="0.08"/>
+
+  <!-- Caja -->
+  <g transform="translate(270,90) scale(1.1)">
+  
+  <g filter="url(#shadow)">
+    <!-- Cara superior -->
+    <polygon points="110,170 170,125 470,125 410,170" fill="#AB47BC"/>
+    <polygon points="110,170 170,125 470,125 410,170" fill="#ffffff" opacity="0.55"/>
+    <!-- Cara lateral -->
+    <polygon points="410,170 470,125 470,475 410,520" fill="url(#side)"/>
+    <polygon points="410,330 470,285 470,300 410,345" fill="#ffffff" opacity="0.35"/>
+    <!-- Cara frontal -->
+    <rect x="110" y="170" width="300" height="350" fill="#ffffff"/>
+    <rect x="110" y="170" width="300" height="96" fill="url(#band)"/>
+    <path d="M110,266 Q260,300 410,250 L410,266 Z" fill="url(#band)"/>
+  </g>
+
+  <!-- Texto lateral (sesgado sobre la cara lateral) -->
+  <text font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="700" fill="#ffffff" letter-spacing="1"
+        transform="translate(436,215) rotate(90) skewX(36.87)">OMEPRAZOL</text>
+
+  <!-- Contenido frontal -->
+  <g font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+    <text x="130" y="200" font-size="13" font-weight="600" fill="#ffffff" opacity="0.9" letter-spacing="2">MARKETFARMA</text>
+    <text x="130" y="246" font-size="36" font-weight="800" fill="#ffffff">Omeprazol</text>
+
+    <!-- Concentración -->
+    <rect x="130" y="300" width="118" height="44" rx="22" fill="#6A1B9A"/>
+    <text x="189" y="330" font-size="22" font-weight="800" fill="#ffffff" text-anchor="middle">20 mg</text>
+
+    <text x="130" y="374" font-size="15" font-weight="600" fill="#37474F">Cápsulas</text>
+    <text x="130" y="396" font-size="13" fill="#607D8B">Liberación retardada · Protector gástrico</text>
+
+    <line x1="130" y1="420" x2="390" y2="420" stroke="#6A1B9A" stroke-width="1.5" opacity="0.3"/>
+
+    <text x="130" y="448" font-size="17" font-weight="700" fill="#6A1B9A">Caja x 30 cápsulas</text>
+    <text x="130" y="472" font-size="10.5" fill="#78909C">Uso oral · Medicamento de uso humano</text>
+    <text x="130" y="490" font-size="10.5" fill="#78909C">Manténgase fuera del alcance de los niños</text>
+
+    <!-- Franja inferior -->
+    <rect x="110" y="502" width="300" height="18" fill="url(#band)"/>
+  </g>
+
+  <!-- Ilustración de la forma farmacéutica -->
+  <g transform="translate(340,322) rotate(-25) scale(1.0)">
+      <path d="M0,-17 H-26 A17,17 0 0 0 -26,17 H0 Z" fill="#6A1B9A"/>
+      <path d="M0,-17 H26 A17,17 0 0 1 26,17 H0 Z" fill="#ffffff" stroke="#6A1B9A" stroke-width="2"/>
+      <rect x="-43" y="-17" width="86" height="34" rx="17" fill="url(#shine)"/>
+      <rect x="-43" y="-17" width="86" height="34" rx="17" fill="none" stroke="#6A1B9A" stroke-width="2.5"/>
+    </g>
+  <g transform="translate(372,362) rotate(-25) scale(0.7)">
+      <path d="M0,-17 H-26 A17,17 0 0 0 -26,17 H0 Z" fill="#6A1B9A"/>
+      <path d="M0,-17 H26 A17,17 0 0 1 26,17 H0 Z" fill="#ffffff" stroke="#6A1B9A" stroke-width="2"/>
+      <rect x="-43" y="-17" width="86" height="34" rx="17" fill="url(#shine)"/>
+      <rect x="-43" y="-17" width="86" height="34" rx="17" fill="none" stroke="#6A1B9A" stroke-width="2.5"/>
+    </g>
+
+  
+  </g>
+
+  <!-- Unidades sueltas -->
+  <g transform="translate(965,655) rotate(-25) scale(1.1)">
+      <path d="M0,-17 H-26 A17,17 0 0 0 -26,17 H0 Z" fill="#6A1B9A"/>
+      <path d="M0,-17 H26 A17,17 0 0 1 26,17 H0 Z" fill="#ffffff" stroke="#6A1B9A" stroke-width="2"/>
+      <rect x="-43" y="-17" width="86" height="34" rx="17" fill="url(#shine)"/>
+      <rect x="-43" y="-17" width="86" height="34" rx="17" fill="none" stroke="#6A1B9A" stroke-width="2.5"/>
+    </g>
+  <g transform="translate(240,640) rotate(-25) scale(0.85)">
+      <path d="M0,-17 H-26 A17,17 0 0 0 -26,17 H0 Z" fill="#6A1B9A"/>
+      <path d="M0,-17 H26 A17,17 0 0 1 26,17 H0 Z" fill="#ffffff" stroke="#6A1B9A" stroke-width="2"/>
+      <rect x="-43" y="-17" width="86" height="34" rx="17" fill="url(#shine)"/>
+      <rect x="-43" y="-17" width="86" height="34" rx="17" fill="none" stroke="#6A1B9A" stroke-width="2.5"/>
+    </g>
+
+  <!-- Marca de agua MarketFarma -->
+  <g pointer-events="none">
+    <g transform="rotate(-25 600 400)" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="700"
+       fill="#6A1B9A" opacity="0.07">
+      <text x="-720" y="-380">MarketFarma</text>
+      <text x="-480" y="-380">MarketFarma</text>
+      <text x="-240" y="-380">MarketFarma</text>
+      <text x="0" y="-380">MarketFarma</text>
+      <text x="240" y="-380">MarketFarma</text>
+      <text x="480" y="-380">MarketFarma</text>
+      <text x="720" y="-380">MarketFarma</text>
+      <text x="960" y="-380">MarketFarma</text>
+      <text x="1200" y="-380">MarketFarma</text>
+      <text x="1440" y="-380">MarketFarma</text>
+      <text x="1680" y="-380">MarketFarma</text>
+      <text x="-600" y="-285">MarketFarma</text>
+      <text x="-360" y="-285">MarketFarma</text>
+      <text x="-120" y="-285">MarketFarma</text>
+      <text x="120" y="-285">MarketFarma</text>
+      <text x="360" y="-285">MarketFarma</text>
+      <text x="600" y="-285">MarketFarma</text>
+      <text x="840" y="-285">MarketFarma</text>
+      <text x="1080" y="-285">MarketFarma</text>
+      <text x="1320" y="-285">MarketFarma</text>
+      <text x="1560" y="-285">MarketFarma</text>
+      <text x="1800" y="-285">MarketFarma</text>
+      <text x="-720" y="-190">MarketFarma</text>
+      <text x="-480" y="-190">MarketFarma</text>
+      <text x="-240" y="-190">MarketFarma</text>
+      <text x="0" y="-190">MarketFarma</text>
+      <text x="240" y="-190">MarketFarma</text>
+      <text x="480" y="-190">MarketFarma</text>
+      <text x="720" y="-190">MarketFarma</text>
+      <text x="960" y="-190">MarketFarma</text>
+      <text x="1200" y="-190">MarketFarma</text>
+      <text x="1440" y="-190">MarketFarma</text>
+      <text x="1680" y="-190">MarketFarma</text>
+      <text x="-600" y="-95">MarketFarma</text>
+      <text x="-360" y="-95">MarketFarma</text>
+      <text x="-120" y="-95">MarketFarma</text>
+      <text x="120" y="-95">MarketFarma</text>
+      <text x="360" y="-95">MarketFarma</text>
+      <text x="600" y="-95">MarketFarma</text>
+      <text x="840" y="-95">MarketFarma</text>
+      <text x="1080" y="-95">MarketFarma</text>
+      <text x="1320" y="-95">MarketFarma</text>
+      <text x="1560" y="-95">MarketFarma</text>
+      <text x="1800" y="-95">MarketFarma</text>
+      <text x="-720" y="0">MarketFarma</text>
+      <text x="-480" y="0">MarketFarma</text>
+      <text x="-240" y="0">MarketFarma</text>
+      <text x="0" y="0">MarketFarma</text>
+      <text x="240" y="0">MarketFarma</text>
+      <text x="480" y="0">MarketFarma</text>
+      <text x="720" y="0">MarketFarma</text>
+      <text x="960" y="0">MarketFarma</text>
+      <text x="1200" y="0">MarketFarma</text>
+      <text x="1440" y="0">MarketFarma</text>
+      <text x="1680" y="0">MarketFarma</text>
+      <text x="-600" y="95">MarketFarma</text>
+      <text x="-360" y="95">MarketFarma</text>
+      <text x="-120" y="95">MarketFarma</text>
+      <text x="120" y="95">MarketFarma</text>
+      <text x="360" y="95">MarketFarma</text>
+      <text x="600" y="95">MarketFarma</text>
+      <text x="840" y="95">MarketFarma</text>
+      <text x="1080" y="95">MarketFarma</text>
+      <text x="1320" y="95">MarketFarma</text>
+      <text x="1560" y="95">MarketFarma</text>
+      <text x="1800" y="95">MarketFarma</text>
+      <text x="-720" y="190">MarketFarma</text>
+      <text x="-480" y="190">MarketFarma</text>
+      <text x="-240" y="190">MarketFarma</text>
+      <text x="0" y="190">MarketFarma</text>
+      <text x="240" y="190">MarketFarma</text>
+      <text x="480" y="190">MarketFarma</text>
+      <text x="720" y="190">MarketFarma</text>
+      <text x="960" y="190">MarketFarma</text>
+      <text x="1200" y="190">MarketFarma</text>
+      <text x="1440" y="190">MarketFarma</text>
+      <text x="1680" y="190">MarketFarma</text>
+      <text x="-600" y="285">MarketFarma</text>
+      <text x="-360" y="285">MarketFarma</text>
+      <text x="-120" y="285">MarketFarma</text>
+      <text x="120" y="285">MarketFarma</text>
+      <text x="360" y="285">MarketFarma</text>
+      <text x="600" y="285">MarketFarma</text>
+      <text x="840" y="285">MarketFarma</text>
+      <text x="1080" y="285">MarketFarma</text>
+      <text x="1320" y="285">MarketFarma</text>
+      <text x="1560" y="285">MarketFarma</text>
+      <text x="1800" y="285">MarketFarma</text>
+      <text x="-720" y="380">MarketFarma</text>
+      <text x="-480" y="380">MarketFarma</text>
+      <text x="-240" y="380">MarketFarma</text>
+      <text x="0" y="380">MarketFarma</text>
+      <text x="240" y="380">MarketFarma</text>
+      <text x="480" y="380">MarketFarma</text>
+      <text x="720" y="380">MarketFarma</text>
+      <text x="960" y="380">MarketFarma</text>
+      <text x="1200" y="380">MarketFarma</text>
+      <text x="1440" y="380">MarketFarma</text>
+      <text x="1680" y="380">MarketFarma</text>
+      <text x="-600" y="475">MarketFarma</text>
+      <text x="-360" y="475">MarketFarma</text>
+      <text x="-120" y="475">MarketFarma</text>
+      <text x="120" y="475">MarketFarma</text>
+      <text x="360" y="475">MarketFarma</text>
+      <text x="600" y="475">MarketFarma</text>
+      <text x="840" y="475">MarketFarma</text>
+      <text x="1080" y="475">MarketFarma</text>
+      <text x="1320" y="475">MarketFarma</text>
+      <text x="1560" y="475">MarketFarma</text>
+      <text x="1800" y="475">MarketFarma</text>
+      <text x="-720" y="570">MarketFarma</text>
+      <text x="-480" y="570">MarketFarma</text>
+      <text x="-240" y="570">MarketFarma</text>
+      <text x="0" y="570">MarketFarma</text>
+      <text x="240" y="570">MarketFarma</text>
+      <text x="480" y="570">MarketFarma</text>
+      <text x="720" y="570">MarketFarma</text>
+      <text x="960" y="570">MarketFarma</text>
+      <text x="1200" y="570">MarketFarma</text>
+      <text x="1440" y="570">MarketFarma</text>
+      <text x="1680" y="570">MarketFarma</text>
+      <text x="-600" y="665">MarketFarma</text>
+      <text x="-360" y="665">MarketFarma</text>
+      <text x="-120" y="665">MarketFarma</text>
+      <text x="120" y="665">MarketFarma</text>
+      <text x="360" y="665">MarketFarma</text>
+      <text x="600" y="665">MarketFarma</text>
+      <text x="840" y="665">MarketFarma</text>
+      <text x="1080" y="665">MarketFarma</text>
+      <text x="1320" y="665">MarketFarma</text>
+      <text x="1560" y="665">MarketFarma</text>
+      <text x="1800" y="665">MarketFarma</text>
+      <text x="-720" y="760">MarketFarma</text>
+      <text x="-480" y="760">MarketFarma</text>
+      <text x="-240" y="760">MarketFarma</text>
+      <text x="0" y="760">MarketFarma</text>
+      <text x="240" y="760">MarketFarma</text>
+      <text x="480" y="760">MarketFarma</text>
+      <text x="720" y="760">MarketFarma</text>
+      <text x="960" y="760">MarketFarma</text>
+      <text x="1200" y="760">MarketFarma</text>
+      <text x="1440" y="760">MarketFarma</text>
+      <text x="1680" y="760">MarketFarma</text>
+      <text x="-600" y="855">MarketFarma</text>
+      <text x="-360" y="855">MarketFarma</text>
+      <text x="-120" y="855">MarketFarma</text>
+      <text x="120" y="855">MarketFarma</text>
+      <text x="360" y="855">MarketFarma</text>
+      <text x="600" y="855">MarketFarma</text>
+      <text x="840" y="855">MarketFarma</text>
+      <text x="1080" y="855">MarketFarma</text>
+      <text x="1320" y="855">MarketFarma</text>
+      <text x="1560" y="855">MarketFarma</text>
+      <text x="1800" y="855">MarketFarma</text>
+      <text x="-720" y="950">MarketFarma</text>
+      <text x="-480" y="950">MarketFarma</text>
+      <text x="-240" y="950">MarketFarma</text>
+      <text x="0" y="950">MarketFarma</text>
+      <text x="240" y="950">MarketFarma</text>
+      <text x="480" y="950">MarketFarma</text>
+      <text x="720" y="950">MarketFarma</text>
+      <text x="960" y="950">MarketFarma</text>
+      <text x="1200" y="950">MarketFarma</text>
+      <text x="1440" y="950">MarketFarma</text>
+      <text x="1680" y="950">MarketFarma</text>
+      <text x="-600" y="1045">MarketFarma</text>
+      <text x="-360" y="1045">MarketFarma</text>
+      <text x="-120" y="1045">MarketFarma</text>
+      <text x="120" y="1045">MarketFarma</text>
+      <text x="360" y="1045">MarketFarma</text>
+      <text x="600" y="1045">MarketFarma</text>
+      <text x="840" y="1045">MarketFarma</text>
+      <text x="1080" y="1045">MarketFarma</text>
+      <text x="1320" y="1045">MarketFarma</text>
+      <text x="1560" y="1045">MarketFarma</text>
+      <text x="1800" y="1045">MarketFarma</text>
+      <text x="-720" y="1140">MarketFarma</text>
+      <text x="-480" y="1140">MarketFarma</text>
+      <text x="-240" y="1140">MarketFarma</text>
+      <text x="0" y="1140">MarketFarma</text>
+      <text x="240" y="1140">MarketFarma</text>
+      <text x="480" y="1140">MarketFarma</text>
+      <text x="720" y="1140">MarketFarma</text>
+      <text x="960" y="1140">MarketFarma</text>
+      <text x="1200" y="1140">MarketFarma</text>
+      <text x="1440" y="1140">MarketFarma</text>
+      <text x="1680" y="1140">MarketFarma</text>
+      <text x="-600" y="1235">MarketFarma</text>
+      <text x="-360" y="1235">MarketFarma</text>
+      <text x="-120" y="1235">MarketFarma</text>
+      <text x="120" y="1235">MarketFarma</text>
+      <text x="360" y="1235">MarketFarma</text>
+      <text x="600" y="1235">MarketFarma</text>
+      <text x="840" y="1235">MarketFarma</text>
+      <text x="1080" y="1235">MarketFarma</text>
+      <text x="1320" y="1235">MarketFarma</text>
+      <text x="1560" y="1235">MarketFarma</text>
+      <text x="1800" y="1235">MarketFarma</text>
+    </g>
+    <text x="600" y="420" transform="rotate(-25 600 400)" text-anchor="middle"
+          font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="96" font-weight="800" letter-spacing="3"
+          fill="#263238" opacity="0.12">MarketFarma</text>
+    <text x="1176" y="782" text-anchor="end" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="600"
+          fill="#263238" opacity="0.45">© MarketFarma</text>
+  </g>
+</svg>

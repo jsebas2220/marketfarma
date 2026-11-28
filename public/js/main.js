@@ -196,7 +196,7 @@ document.body.insertAdjacentHTML('beforeend', `
             <button class="business-chat__close" type="button" aria-label="Cerrar chat">×</button>
           </header>
           <div class="business-chat__messages" role="log" aria-live="polite">
-            <p class="business-chat__message business-chat__message--bot">Bienvenido a Marketfarma, que puedo ayudarte</p>
+            <p class="business-chat__message business-chat__message--bot">Bienvenido a Marketfarma, en que puedo ayudarte</p>
           </div>
           <form class="business-chat__form">
             <label class="sr-only" for="business-chat-input">Escribe tu mensaje</label>
@@ -217,7 +217,7 @@ if (businessChat) {
   const chatInput = businessChat.querySelector('#business-chat-input');
   const whatsappStatus = businessChat.querySelector('.business-chat__status');
   const greetingNotice = businessChat.querySelector('.business-chat__notice');
-  const businessWhatsAppNumber = '';
+  const businessWhatsAppNumber = '+57 313 864 8530';
   let chatWasOpened = false;
 
   const closeBusinessChat = () => {
